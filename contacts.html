@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алматы мануфактура</title>
+    <link rel="icon" href="./assets/logo 1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+
+    <header id="Menu">
+        <div class="container">
+            <div href="#" class="logo">
+                <img src="./assets/Frame 1.png">
+            </div>
+            <div class="stack" onclick="Menu()">
+                <div class="stack-item stack-item1"></div>
+                <div class="stack-item stack-item2"></div>
+                <div class="stack-item stack-item3"></div>
+            </div>
+            <nav id="Nav" class="adaptive-nav">
+                <li class="linePush1"><a href="./index.html">Главная</a></li>
+                <li class="linePush3"><a href="./about.html">О компании</a></li>
+                <li class="linePush4"><a href="./catalog.html">Каталог</a></li>
+                <li class="linePush5"><a href="#">Контакты</a></li>
+                <div class="line"></div>
+            </nav>
+        </div>
+    </header>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11623.59701766105!2d76.8388091!3d43.2535332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x61ba09480437f910!2z0KLQpiAiRG9taWxsaW9uIg!5e0!3m2!1suk!2sus!4v1655628962722!5m2!1suk!2sus" width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <section class="form">
+        <div id="FORM"></div>
+        <div class="container">
+            <h1 class="container-title form-title">Хотите <span class="red italic">связаться</span> с нами? <br>
+                Сделайте это прямо
+                сейчас!</h1>
+            <div class="form-content">
+                <div class="form-text">
+                    <h2>+8 700 767 252091</h2>
+                    <h2>@info.com</h2>
+                    <h2>г. Алматы, ус. Рыскулова 143, <br> торговый центр ”Домиллион”</h2>
+                </div>
+                <form class="mail">
+                    <input class="mail-input" type="text" placeholder="Ваше имя">
+                    <input class="mail-input" type="text" placeholder="Телефон">
+                    <input class="mail-input" type="text" placeholder="E-mail">
+                    <input class="mail-input" type="text" placeholder="Сообщение">
+                    <label>
+                        <input class="mail-check" type="checkbox">
+                        <span>Я соглашаюсь с политикой конфиденциальности</span>
+                    </label>
+                    <button>Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h1>Алматы мануфактура</h1>
+                    <h3>Качество, надежность и самовыражение — <br class="adaptive-none"> вот что есть приоритетом нашей работы.</h3>
+                </div>
+                <div class="footer-item">
+                    <h2>Контакты</h2>
+                    <p>+8 700 767 252091</p>
+                    <p>@info.com</p>
+                    <p>г. Алматы, ус. Рыскулова 143,</p>
+                    <p> торговый
+                        центр
+                        ”Домиллион”</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Соцсети</h2>
+                    <p>Instagram</p>
+                    <p>Telegram</p>
+                    <p>Facebook</p>
+                    <p>WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menuInd = true;
+
+        function Menu() {
+            var logo = document.getElementsByClassName('logo')
+            var menu = document.querySelector('#Menu')
+            var nav = document.querySelector('#Nav')
+
+            if (menuInd === true) {
+                menu.classList.add('menu-open')
+                nav.classList.remove('adaptive-nav')
+                logo[0].classList.add('adaptive-logo')
+            }
+            else {
+                menu.classList.remove('menu-open')
+                nav.classList.add('adaptive-nav')
+                logo[0].classList.remove('adaptive-logo')
+            }
+
+            menuInd = !menuInd
+
+        }
+    </script>
+</body>
+
+</html>

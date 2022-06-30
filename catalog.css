@@ -1,0 +1,47 @@
+
+
+
+.catalog-main{
+    margin-top: 169px;
+}
+.catalog-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-top: 190px;
+}
+.catalog-item:first-child{
+    margin-top: 80px;
+}
+.mono{
+    height: 612px;
+    position: relative;
+}
+.mono img{
+    width: 100%;
+}
+.mono p{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.duo{
+    display: grid;
+    grid-template-columns: 1fr 0.76fr;
+    column-gap: 39px;
+}
+.duo2{
+    display: grid;
+    grid-template-columns: 0.76fr 1fr;
+    column-gap: 39px;
+}
+.bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: auto;
+
+}
+
+

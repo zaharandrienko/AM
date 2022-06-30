@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алматы мануфактура</title>
+    <link rel="icon" href="./assets/logo 1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./about.css">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+
+    <header id="Menu">
+        <div class="container">
+            <div href="#" class="logo">
+                <img src="./assets/Frame 1.png">
+            </div>
+            <div class="stack" onclick="Menu()">
+                <div class="stack-item stack-item1"></div>
+                <div class="stack-item stack-item2"></div>
+                <div class="stack-item stack-item3"></div>
+            </div>
+            <nav id="Nav" class="adaptive-nav">
+                <li class="linePush1"><a href="./index.html">Главная</a></li>
+                <li class="linePush3"><a href="#">О компании</a></li>
+                <li class="linePush4"><a href="./catalog.html">Каталог</a></li>
+                <li class="linePush5"><a href="./contacts.html">Контакты</a></li>
+                <div class="line"></div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-photo-about">
+    </div>
+
+    <section class="main-about">
+        <div class="container">
+            <h1 class="container-title">О компании — <br>
+                <span class="red italic">Алматы Мануфактура </span>
+            </h1>
+            <div class="main-about-content">
+                <div class="main-about-text">
+                    <p>Компания “Алматы Мануфактура” является главой консорциума швейных предприятий. Уже более 15-ти
+                        лет мы воплощаем в жизнь самые смелые идеи наших клиентов. Мы объединились для того чтобы
+                        обеспечивать высокое качество и лучшую производительность на рынке России и Казахстана</p>
+                </div>
+                <div class="main-about-photo">
+                    <img src="./assets/Rectangle 167.jpg"><img class="adaptive-none" src="./assets/Rectangle 168.jpg">
+                </div>
+                <div class="main-about-text">
+                    <p>Мы всегда рады нашим клиентам, поэтому обеспечиваем лучшие условия для сотрудничества. <br><br>
+
+                        Предприятия нашего консорциума оснащены новейшим немецким оборудованием, а работы выполняются
+                        профессионалами своего дела с многолетним опытом
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work container-partners">
+        <div class="container">
+            <div class="container-title">
+                <h3>Наши</h3><br class="adaptive-none">
+                <h5 class="red italic">партнеры</h5>
+                <div class="work-text partners">
+                    <span class="partner italic">
+                        <h6>BAMBOO</h6>
+                    </span>
+                    <span class="partner italic">
+                        <h6>KLOPMAN</h6>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="boss">
+        <div class="container">
+            <div class="boss-content">
+                <div class="boss-photo"></div>
+                <div class="boss-text">
+                    <p>“We live on the surface of our planet Earth. Gravity keeps us here on the Earth. Gravity is an invisible force that pulls things and people toward the center of the Earth. All the other planets, stars and moons have gravity too.“</p>
+                    <h3><span class="red italic">Жанар Муратова &nbsp  / </span> &nbsp  Гендиректор ООО ”Алматы мануфактура”</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h1>Алматы мануфактура</h1>
+                    <h3>Качество, надежность и самовыражение — <br class="adaptive-none"> вот что есть приоритетом нашей работы.</h3>
+                </div>
+                <div class="footer-item">
+                    <h2>Контакты</h2>
+                    <p>+8 700 767 252091</p>
+                    <p>@info.com</p>
+                    <p>г. Алматы, ус. Рыскулова 143,</p>
+                    <p> торговый
+                        центр
+                        ”Домиллион”</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Соцсети</h2>
+                    <p>Instagram</p>
+                    <p>Telegram</p>
+                    <p>Facebook</p>
+                    <p>WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menuInd = true;
+
+        function Menu() {
+            var logo = document.getElementsByClassName('logo')
+            var menu = document.querySelector('#Menu')
+            var nav = document.querySelector('#Nav')
+
+            if (menuInd === true) {
+                menu.classList.add('menu-open')
+                nav.classList.remove('adaptive-nav')
+                logo[0].classList.add('adaptive-logo')
+            }
+            else {
+                menu.classList.remove('menu-open')
+                nav.classList.add('adaptive-nav')
+                logo[0].classList.remove('adaptive-logo')
+            }
+
+            menuInd = !menuInd
+
+        }
+    </script>
+</body>
+
+</html>
