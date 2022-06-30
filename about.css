@@ -1,7 +1,7 @@
 .main-photo-about{
     max-width: 100%;
 	min-height: 416px;
-	background-image: url(./assets/Rectangle\ 141.jpg);
+	background-image: url(./assets/main.jpg);
 	background-size: cover;
 	background-position: center;
 	color: #FBFBFB;
@@ -66,7 +66,7 @@
 @media (max-width: 1200px){
     .main-photo-about{
 		min-height: 600px;
-		background-image: url(/assets/Rectangle\ 141\ \(1\).jpg);
+		background-image: url(/assets/main.jpg);
 		background-size: cover;
 		background-position: 90% 0;
     }
