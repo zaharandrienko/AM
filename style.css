@@ -69,7 +69,7 @@ section {
 	width: 100%;
 	font-size: 70px;
 	font-weight: 400;
-
+	line-height: 1;
 }
 
 .container-title h3 {
@@ -124,6 +124,21 @@ section {
 	clip-path: polygon(0 48%, 48% 48%, 48% 48%, 52% 48%, 52% 48%, 100% 48%, 100% 52%, 52% 52%, 52% 52%, 48% 52%, 48% 52%, 0 52%);
 	transition: 300ms;
 }
+.arrow{
+	margin-left: 16px;
+}
+.arrow img{
+	width: 13px;
+	height: 13px;
+}
+
+.arrow2 img{
+	width: 13px;
+	height: 13px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
 
 
 @media (max-width: 1200px) {
@@ -156,6 +171,7 @@ section {
 	}
 
 	.container-title h4 {
+		margin-left: 10px;
 		font-size: 36px;
 	}
 
@@ -956,7 +972,7 @@ header nav li:last-child {
 
 @media (max-width: 600px) {
 	.process {
-		margin-top: 44px;
+		margin-top: 80px;
 	}
 
 	.process-item {
@@ -1058,9 +1074,13 @@ header nav li:last-child {
 
 	.advantages-text {
 		margin-top: 40px;
-		row-gap: 30px;
+		display: block;
 	}
-
+	.advantages-text-item{
+		margin-bottom: 30px;
+		width: 100%;
+		height: fit-content;
+	}
 	.advantages-text-item h3 {
 		font-size: 15px;
 		font-weight: 400;
@@ -1275,6 +1295,12 @@ header nav li:last-child {
 	.catalog button {
 		width: 100%;
 	}
+	.adaptive-left{
+		float: left;
+	}
+	.adaptive-right{
+		margin-right: 10px;
+	}
 }
 
 
@@ -1314,7 +1340,7 @@ header nav li:last-child {
 }
 
 .mail input::placeholder {
-	color: #1F1F1F;
+	color: #1f1f1f59;
 }
 .mail-check{
 	width: 30px;
@@ -1326,6 +1352,9 @@ header nav li:last-child {
 }
 .mail button {
 	margin-top: 40px;
+}
+.mail span{
+	color: #747474;
 }
 
 @media (max-width: 1200px) {
@@ -1377,7 +1406,7 @@ header nav li:last-child {
 
 	.form h2 {
 		margin-top: 20px;
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	.mail label {
@@ -1390,6 +1419,14 @@ header nav li:last-child {
 	}
 	.mail button {
 		width: 100%;
+	}
+	.mail-check{
+		width: 25px;
+		height: 25px;
+		margin-right: 8px;
+	}
+	.mail span{
+		font-size: 12px;
 	}
 }
 
@@ -1410,7 +1447,7 @@ footer {
 	display: grid;
 	grid-template-columns: 3fr 1.2fr 1.2fr;
 	column-gap: 100px;
-	color: #F6F6F6;
+	color: #F5F5F5;
 }
 
 .footer-item h1 {
@@ -1455,15 +1492,17 @@ footer {
 		grid-column-end: 3;
 	}
 }
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
 	footer {
-		height: 498px;
-		margin-top: 0px;
+		height: fit-content;
+		padding-bottom: 40px;
 	}
 	.footer-content {
+		padding-top: 0px;
+		display: block;
+	}
+	.footer-item{
 		padding-top: 40px;
-		row-gap: 40px;
-		column-gap: 60px;
 	}
 	.footer-item h1 {
 		font-size: 36px;
@@ -1481,7 +1520,10 @@ footer {
 	}
 	
 	.footer-item p {
-		margin-top: 8px;
+		margin-top: 5px;
 		font-size: 12px;
+	}
+	.footer-item2 p {
+		margin-top: 7px;
 	}
 }
