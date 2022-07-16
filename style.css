@@ -1520,10 +1520,11 @@ footer {
 	}
 	
 	.footer-item p {
-		margin-top: 5px;
-		font-size: 12px;
+		margin-top: 10px;
+		font-size: 16px;
 	}
 	.footer-item2 p {
-		margin-top: 7px;
+		margin-top: 10px;
+		font-size: 16px;
 	}
 }
