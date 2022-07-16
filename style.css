@@ -502,7 +502,7 @@ header nav li:last-child {
 		display: block;
 		max-width: auto;
 		min-height: 600px;
-		background-image: url(/assets/main.jpg);
+		background-image: url(./assets/main.jpg);
 		background-size: cover;
 		background-position: 90% 0;
 		color: #FBFBFB;
@@ -536,7 +536,7 @@ header nav li:last-child {
 
 	.main-title-adaptive h1 {
 		width: 100%;
-		font-size: 45px;
+		font-size: 50px;
 		font-weight: 400;
 		min-width: 10px;
 		float: left;
@@ -573,7 +573,7 @@ header nav li:last-child {
 	.main-photo {
 		max-width: auto;
 		min-height: 400px;
-		background-image: url(/assets/Rectangle\ 141\ \(1\).jpg);
+		background-image: url(./assets/main.jpg);
 		background-size: cover;
 		background-position: center;
 		color: #FBFBFB;
@@ -907,7 +907,7 @@ header nav li:last-child {
 	position: absolute;
 	width: 0px;
 	height: 0px;
-	z-index: 1000;
+	z-index: 100;
 }
 .process-item-ul li:hover  .img-hover{
 	width: 570px;
@@ -980,17 +980,14 @@ header nav li:last-child {
 	.process-item-ul li {
 		position: relative;
 	}
-	.img-hover{
-		width: 0px;
-		height: 0px;
-	}
 	.process-item-ul li:hover  .img-hover{
+		position: relative;
+		margin-top: 20px;
 		width: 100%;
-		height: 264px;
+		height: auto;
 		top: 25%;
 		right: auto;
 		left: 0;
-	
 	}
 }
 
