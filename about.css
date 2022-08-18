@@ -1,7 +1,7 @@
 .main-photo-about{
     max-width: 100%;
 	min-height: 416px;
-	background-image: url(./assets/main.jpg);
+	background-image: url(./assets/about-main.jpg);
 	background-size: cover;
 	background-position: center;
 	color: #FBFBFB;
@@ -32,6 +32,9 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
 }
+.main-about-photo img{
+    width: 100%;
+}
 
 /*----------------
  	Boss Section
@@ -51,7 +54,7 @@
 }
 .boss-text h3{
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
     color: #909090;
 }
@@ -62,6 +65,9 @@
     background-size: 100%;
     background-position: 25%;
     background-repeat: no-repeat;
+}
+.boss-text span{
+    font-size: 18px;
 }
 @media (max-width: 1200px){
     .main-photo-about{
@@ -98,8 +104,6 @@
     .boss-content{
         grid-template-columns: 1fr;
         column-gap: 0px;
-    }
-    .boss-text{
     }
     .boss-photo{
         width: 100%;

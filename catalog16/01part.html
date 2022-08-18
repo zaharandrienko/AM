@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алматы Мануфактура</title>
+    <link rel="icon" href="../assets/logo 1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="../assets/logo 1.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../catalog.css">
+    <link rel="stylesheet" href="./01part.css">
+    <script src="../main.js"></script>
+</head>
+
+<body>
+
+    <header id="Menu">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo">
+                    <img src="../assets/Frame 1.png">
+                </div>
+            </a>
+            <div class="stack" onclick="Menu()">
+                <div class="stack-item stack-item1"></div>
+                <div class="stack-item stack-item2"></div>
+                <div class="stack-item stack-item3"></div>
+            </div>
+            <nav id="Nav" class="adaptive-nav">
+                <li class="linePush1"><a href="../index.html">Главная</a></li>
+                <li class="linePush3"><a href="../about.html">О компании</a></li>
+                <li class="linePush4"><a href="../catalog.html">Каталог</a></li>
+                <li class="linePush5"><a href="../contacts.html">Контакты</a></li>
+                <div class="line"></div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-01">
+        <div class="container">
+            <div class="content-01">
+                <div class="carusel">
+                    <div class="blocks">
+                        <div class="block" style="background-image: url(./1.jpg);" onclick="Carusel(1)"></div>
+                        <div class="block" style="background-image: url(./2.jpg);" onclick="Carusel(2)"></div>
+                        <div class="block" style="background-image: url(./3.jpg);" onclick="Carusel(3)"></div>
+                        <div class="block" style="background-image: url(./4.jpg);" onclick="Carusel(4)"></div>
+                        <div class="block" style="background-image: url(./5.jpg);" onclick="Carusel(5)"></div>
+                    </div>
+                    <div class="main-block"></div>
+                </div>
+                <div class="carusel-text">
+                    <h2 class="red">Шторы</h2>
+                    <ul>
+                        <li onclick="Open(1)" class="open">
+                            <div class="open-content">
+                                <p>Тип одежды</p>
+                                <div>
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                            <h6>Шторы / гардины / тюль / покрывала / скатерти / салфетки</h6>
+                        </li>
+                        <li onclick="Open(2)" class="open">
+                            <div class="open-content">
+                                <p>Материалы</p>
+                                <div>
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                            <h6>Вуаль, тюль, органза, сетка и тд на Ваш выбор</h6>
+                        </li>
+                        <li onclick="Open(3)" class="open">
+                            <div class="open-content">
+                                <p>Краткое описание</p>
+                                <div>
+                                    <div class="plus"></div>
+                                </div>
+                            </div>
+                            <h6>Используем только качественные ткани и фурнитуру для пошива
+                            </h6>
+                        </li>
+                    </ul>
+                    <h3>Ассортимент изделий расширяется под Ваши требования.Цена и сроки рассчитываются индивидуально ,
+                        зависит от объёма заказа, сложности дизайна и дополнительных услуг</h3>
+                    <button>Связаться с нами</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other">
+        <div class="container">
+            <h1 class="container-title">Похожие <span class="red italic"> товары</span></h1>
+            <div class="other-scroll">
+                <div class="other-content">
+                    <div class="other-item">
+                        <a href="../catalog8/01part.html">
+                            <div class="other-img" style="background-image:  url(../catalog8/5.jpg);"></div>
+                            <p>Носочно-чулочная продукция</p>
+                        </a>
+                    </div>
+                    <div class="other-item">
+                        <a href="../catalog7/01part.html">
+                            <div class="other-img" style="background-image:  url(../catalog7/1.jpg);"></div>
+                            <p>Белье</p>
+                        </a>
+                    </div>
+                    <div class="other-item">
+                        <a href="../catalog15/01part.html">
+                            <div class="other-img" style="background-image:  url(../catalog15/5.jpg);"></div>
+                            <p>Детская одежда</p>
+                        </a>
+                    </div>
+                    <div class="other-item">
+                        <a href="../catalog13/01part.html">
+                            <div class="other-img" style="background-image:  url(../catalog13/5.jpg);"></div>
+                            <p>Школьная форма</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form">
+        <div id="FORM"></div>
+        <div class="container">
+            <h1 class="container-title form-title">Хотите <span class="red italic">связаться</span> с нами? <br>
+                Сделайте это прямо
+                сейчас!</h1>
+            <div class="form-content">
+                <div class="form-text">
+                    <h2>+7 701 725 2091</h2>
+                    <h2>info@am.kz</h2>
+                    <h2>г. Алматы, УЛ. БОЛТИРИКОВА 4</h2>
+                </div>
+                <form class="mail">
+                    <input class="mail-input" type="text" placeholder="Ваше имя">
+                    <input class="mail-input" type="text" placeholder="Телефон">
+                    <input class="mail-input" type="text" placeholder="E-mail">
+                    <input class="mail-input" type="text" placeholder="Сообщение">
+                    <label>
+                        <input class="mail-check" type="checkbox">
+                        <span>Я соглашаюсь с политикой конфиденциальности</span>
+                    </label>
+                    <button>Связаться с нами</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h1>Алматы Мануфактура</h1>
+                    <h3>Качество, надежность и самовыражение — <br> вот что есть приоритетом нашей работы.</h3>
+                </div>
+                <div class="footer-item footer-item2">
+                    <h2>Контакты</h2>
+                    <p>+7 701 725 2091</p>
+                    <p>info@am.kz</p>
+                    <p>г. Алматы, ул. Болтирикова 4</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Соцсети</h2>
+                    <p>Instagram</p>
+                    <p>Telegram</p>
+                    <p>WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menuInd = true;
+
+        function Menu() {
+            var logo = document.getElementsByClassName('logo')
+            var menu = document.querySelector('#Menu')
+            var nav = document.querySelector('#Nav')
+
+            if (menuInd === true) {
+                menu.classList.add('menu-open')
+                nav.classList.remove('adaptive-nav')
+                logo[0].classList.add('adaptive-logo')
+            }
+            else {
+                menu.classList.remove('menu-open')
+                nav.classList.add('adaptive-nav')
+                logo[0].classList.remove('adaptive-logo')
+            }
+
+            menuInd = !menuInd
+
+        }
+
+        Carusel(5)
+
+        let f = true;
+        let p = true;
+        let v = true;
+
+
+        function Carusel(n) {
+            const mainBlock = document.querySelector('.main-block');
+            mainBlock.style.cssText = "background-image: url(./" + n + ".jpg);";
+        }
+
+        function Open(x) {
+            const li = document.getElementsByClassName('open');
+            const plus = document.getElementsByClassName('plus')
+
+            if(x==1){
+                f=!f
+            }
+
+            if(x==2){
+                p=!p
+            }
+
+            if(x==3){
+                v=!v
+            }
+
+            if (f == false) {
+                li[0].classList.add('active')
+                plus[0].classList.add('plus-after')
+            }
+            else {
+                li[0].classList.remove('active')
+                plus[0].classList.remove('plus-after')
+            }
+
+            if (p == false) {
+                li[1].classList.add('active')
+                plus[1].classList.add('plus-after')
+            }
+            else {
+                li[1].classList.remove('active')
+                plus[1].classList.remove('plus-after')
+            }
+
+            if (v == false) {
+                li[2].classList.add('active')
+                plus[2].classList.add('plus-after')
+            }
+            else {
+                li[2].classList.remove('active')
+                plus[2].classList.remove('plus-after')
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>
